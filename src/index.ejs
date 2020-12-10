@@ -37,7 +37,7 @@
     <script type="systemjs-importmap">
     {
       "imports": {
-         "start-angular": "http://localhost:4300/main.js",
+         "start-angular": "http://localhost:4400/main.js",
          "second-angular": "http://localhost:4200/main.js",
          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.5/lib/system/single-spa.min.js",
          "single-spa-layout": "https://unpkg.com/single-spa-layout@1.0.0-beta.2/dist/system/single-spa-layout.min.js"
@@ -89,9 +89,8 @@
 
     <template id="single-spa-layout">
         <single-spa-router>
-
             <div class="main-content" style="padding: 5rem">
-                <route path="/">
+                <route path="start-angular">
                     <application name="start-angular"></application>
                 </route>
 
